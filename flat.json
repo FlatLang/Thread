@@ -1,0 +1,29 @@
+{
+  "name": "Thread",
+  "version": "0.1.0",
+  "description": "Flat Thread Library",
+  "author": "Braden Steffaniak",
+  "license": "ISC",
+  "defaultTarget": "es6",
+  "scripts": {
+    "test": "node dist/es6/test.js"
+  },
+  "sources": {
+    "main": {
+      "mainClass": "flat/thread/Thread",
+      "source": "src",
+      "dependencies": {
+        "github:FlatLang/System": "master",
+        "github:FlatLang/IO": "master",
+        "github:FlatLang/Stream": "master"
+      }
+    },
+    "test": {
+      "mainClass": "flat/thread/Thread_TestSuite",
+      "source": "src/**/*_Test*.flat",
+      "dependencies": {
+        "github:FlatLang/Test": "master"
+      }
+    }
+  }
+}
