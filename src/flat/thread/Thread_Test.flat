@@ -3,9 +3,9 @@ package flat/thread
 import flat/thread/Thread
 
 testable class {
-  test `can create`() {
-    let value = Thread()
+    test `can create`() {
+        let value = Thread()
 
-    expect(value).toNotBe(null)
-  }
+        expect(value).toNotBe(null)
+    }
 }
